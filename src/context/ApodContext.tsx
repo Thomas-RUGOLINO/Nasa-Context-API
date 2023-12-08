@@ -3,9 +3,9 @@ import Loader from "../components/Loader/Loader";
 import axios from 'axios'; 
 
 
-export const HomeContext = createContext('')
+export const ApodContext = createContext('')
 
-export const HomeController = ({children}) => {
+export const ApodController = ({children}) => {
 
     const [dayPicture,setDayPicture] = useState([])
     const [error, setError] = useState('')
@@ -18,26 +18,28 @@ export const HomeController = ({children}) => {
         try{
             const apiCall = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
             setDayPicture(apiCall.data)
-            console.log(dayPicture)
+            
         }
         catch (err : any) {
             setError(err);
-            console.log(error)
+            console.log(error);
         } 
         finally {
             setIsLoading(false);
+            console.log(API_KEY);
 
         }
     }
 
     useEffect(() => {
         fetchDayPicture()
+        console.log(dayPicture);
     }, [])
 
     return(
-       <HomeContext.Provider value={[dayPicture, setDayPicture]}>
+       <ApodContext.Provider value={[dayPicture, setDayPicture]}>
            {isLoading ? ( <Loader />) : (children)} 
-        </HomeContext.Provider>
+        </ApodContext.Provider>
     )
 }
 

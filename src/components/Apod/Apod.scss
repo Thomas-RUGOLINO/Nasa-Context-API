@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.apod{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__img{
+        align-items: center; 
+    }
+
+    &__title{
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    &__author{
+        font-size: 1.5rem;
+    }
+
+    &__explanation{
+        font-size: 1.25rem;
+        font-style: italic;
+    }
+}
