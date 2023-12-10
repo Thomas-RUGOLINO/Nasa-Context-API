@@ -9,12 +9,14 @@ import Curiositys from '../Curiosity/Curiositys'
 import Error from '../Error/Error'
 import { ApodController } from '../../context/ApodContext'
 import { CuriosityController } from '../../context/CuriosityContext'
+import { IssController } from '../../context/IssContext'
 
 const MyRouter = () => {
 
     return(
         <>
         <ApodController>
+            <IssController>
             <CuriosityController>
             <NavBar />
             <Routes>
@@ -26,6 +28,7 @@ const MyRouter = () => {
                 <Route path='/curiosity/:id' element={<Curiosity />} />
             </Routes>
             </CuriosityController>
+            </IssController>
         </ApodController>
         </>
     )

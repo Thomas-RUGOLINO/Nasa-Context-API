@@ -2,7 +2,7 @@
   margin: 0 auto;
 
   &__image{ 
-   width : 350px;
+   width : 400px;
    height: 240px;
   }
 }
@@ -15,7 +15,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  color: #fc3d21;
+  color: #ff243b;
+  text-shadow: 
+    -1px -1px 0 rgb(177, 175, 175),  
+    1px -1px 0 rgb(177, 175, 175),
+    -1px 1px 0 rgb(177, 175, 175),
+    1px 1px 0 rgb(177, 175, 175);
 }
 .navigation-items{
   display: flex;

@@ -10,7 +10,7 @@ const NavBar = () => {
                         </Link>
                         <div className="navigation-items">
                                 <Link to='/apod' className='navigation-items__link'>Apod</Link>
-                                <Link to='/iss' className='navigation-items__link'>Iss</Link>
+                                <Link to='/iss' className='navigation-items__link'>Iss tracker</Link>
                                 <Link to='/curiositys' className='navigation-items__link'> Curiosity</Link>
                         </div>
                 </div>
