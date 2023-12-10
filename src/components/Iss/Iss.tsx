@@ -6,7 +6,7 @@ import { IssContext } from '../../context/IssContext'
 
 
 
-const Iss = ({center, zoom}) => {
+const Iss = () => {
 
     const {value1, value2} =useContext(IssContext)
      // Extraire les valeurs de latitude et longitude ainsi que les fonctions de mise à jour
@@ -19,7 +19,7 @@ const Iss = ({center, zoom}) => {
      const [lat, setLat] = useState(latitude);
      const [lng, setLng] = useState(longitude);
 
-    zoom = 2;
+    const zoom = 2;
 
     useEffect(() => {
         setLat(latitude);
@@ -30,9 +30,9 @@ const Iss = ({center, zoom}) => {
         lat:  lat,
         lng:  lng,
     };
-    console.log(defaultCenter)
+    
     const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY
-    console.log(API_KEY);
+  
     return (
         <>
         <h2 className="map-title">Position courante de l'ISS</h2>
