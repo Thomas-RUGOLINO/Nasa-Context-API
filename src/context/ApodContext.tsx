@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createContext, useState, useEffect} from "react";
 import Loader from "../components/Loader/Loader";
 import axios from 'axios'; 

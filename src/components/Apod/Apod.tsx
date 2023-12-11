@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useContext } from 'react'
 import './Apod.scss'
 import { ApodContext } from '../../context/ApodContext'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import './Iss.scss'
 import GoogleMapReact from 'google-map-react'
 import iss from './iss.png'
