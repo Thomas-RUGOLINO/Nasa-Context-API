@@ -6,13 +6,14 @@ const Apod = () => {
     const [dayPicture, setDayPicture] = useContext(ApodContext)
     return (
         <>
-        <h1> L'ASTRONOMY PICTURE  OF THE DAY</h1>
-        <div className='apod'>
-            <img className='apod__img' src={dayPicture.url}  alt="Pic of the day" />
-            <h2 className='apod__title'>{dayPicture.title}</h2>
-            <p className='apod__author'> Auteur : {dayPicture.copyright}, image prise le : {dayPicture.date}</p>
-            <p className='apod__explanation'>Légende : {dayPicture.explanation}</p>
-
+        <div className="apod">
+            <h1 className="apod__title"> L'ASTRONOMY PICTURE  OF THE DAY</h1>
+            <div className='apod-container'>
+                <img className='apod-container__img' src={dayPicture.url}  alt="Pic of the day" />
+                <h2 className='apod-container__title'>{dayPicture.title}</h2>
+                <p className='apod-container__author'> Auteur : {dayPicture.copyright}, image prise le : {dayPicture.date}</p>
+                <p className='apod-container__explanation'>Légende : {dayPicture.explanation}</p>
+            </div>
         </div>
         </>
 )}

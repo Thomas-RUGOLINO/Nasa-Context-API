@@ -35,19 +35,20 @@ const Iss = () => {
   
     return (
         <>
-        <h2 className="map-title">Position courante de l'ISS</h2>
-        <p className='map-desc'>La Station spatiale internationale et le laboratoire Columbus de l'ESA volent à une altitude de 400 km à des vitesses qui défient littéralement la gravité. À 28 800 km/h, il ne faut que 92 minutes au laboratoire en apesanteur pour faire un tour complet de la Terre. Les astronautes travaillant et vivant sur la Station connaissent 16 levers et couchers de soleil chaque jour.
+        <div className='iss'>
+            <h2 className="iss__title">Position courante de l'ISS</h2>
+            <p className='iss__desc'>La Station spatiale internationale et le laboratoire Columbus de l'ESA volent à une altitude de 400 km à des vitesses qui défient littéralement la gravité. À 28 800 km/h, il ne faut que 92 minutes au laboratoire en apesanteur pour faire un tour complet de la Terre. Les astronautes travaillant et vivant sur la Station connaissent 16 levers et couchers de soleil chaque jour.
 
-        </p>
-        <div className='map-container'>
-            <GoogleMapReact
-                bootstrapURLKeys={{key: `${API_KEY}`, }}
-                defaultCenter={defaultCenter}
-                defaultZoom={zoom}
+            </p>
+            <div className='iss__container'>
+                <GoogleMapReact
+                    bootstrapURLKeys={{key: `${API_KEY}`, }}
+                    defaultCenter={defaultCenter}
+                    defaultZoom={zoom}
                 > 
                     <img  src ={iss} alt="ISS icon" className="iss-icon" lat={defaultCenter.lat} lng={defaultCenter.lng}/>
-                </GoogleMapReact>
-        
+                    </GoogleMapReact>
+            </div>
         </div>
         </>
     )
