@@ -34,11 +34,11 @@ const Curiosity = () => {
     console.log(photoData);
     return (
         <>
-            <div className="detail--curiosity">
-            {photoData? (<h2 className="detail--curiosity__title">Prise de vue de {photoData.camera.name} le jour solaire n° : {photoData.sol}</h2> ): (<Loader />) }
-            {photoData? (<p className="detail--curiosity__detail">Module : {photoData.camera.full_name}</p> ): (<Loader />) }
-            {photoData? (<p className="detail--curiosity__date">Photo prise le : {dateFormat}</p> ): (<Loader />) }
-            {photoData? (<img className="detail--curiosity__image" src={photoData.img_src} alt={`Photo numero ${photoData.id}`} /> ): (<Loader />) }
+            <div className="curiosity">
+            {photoData? (<h2 className="curiosity__title">Prise de vue de {photoData.camera.name} le jour solaire n° : {photoData.sol}</h2> ): (<Loader />) }
+            {photoData? (<p className="curiosity__detail">Module : {photoData.camera.full_name}</p> ): (<Loader />) }
+            {photoData? (<p className="curiosity__date">Photo prise le : {dateFormat}</p> ): (<Loader />) }
+            {photoData? (<img className="curiosity__image" src={photoData.img_src} alt={`Photo numero ${photoData.id}`} /> ): (<Loader />) }
             </div>
         </>    
 )}

@@ -1,30 +1,40 @@
-h1 {
-    text-align: center;
-    font-size: 3rem;
+.apod{
+    max-width: 100%;
+    margin: auto;
+
+    &__title{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: center;
+    }
 }
 
-.apod{
-    width: 80%;
+.apod-container{
+    max-width: 90%;
+    height: 600px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
 
     &__img{
-        align-items: center; 
+        max-width: 100%;
+        min-height: 60%;
+        margin-bottom: 20px;
     }
 
     &__title{
         font-size: 2rem;
-        text-align: center;
-        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: 15px;
     }
 
     &__author{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 5px;
     }
 
     &__explanation{
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         font-style: italic;
+        background-color: rgba(24, 23, 23, 0.2);
     }
 }

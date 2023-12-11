@@ -1,17 +1,26 @@
-.detail--curiosity{
+.curiosity{
     margin: auto;
     text-align: center;
+    width: 80%;
 
     &__title{
-        font-size: 2.5rem;
+        font-size: 3rem;
+        margin-bottom: 15px;
 
     }
 
     &__detail{
         font-size: 1.5rem;
+        margin-bottom: 5px;
     }
 
     &__date{
         font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    &__image{
+        height: 70vh;
+        max-width: 100%;
     }
 }

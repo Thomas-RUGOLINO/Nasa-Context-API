@@ -25,20 +25,20 @@ const Curiositys = () => {
 
     return (
         <>
-        <div className="curiosity--header">
-        <h2 className="curiosity--header__title">Les Photos de Curiosity du : {dateFormat} - {curiosity.photos.length} Clichés</h2>
-        <form className="curiosity--header__form" onSubmit={handleSubmit}>
-            <input className="curiosity--header__input" type='text' value={inputValue} placeholder='Entrez une date au format AAAA-MM-JJ à partir de SEPT 2012' onChange={e => setInputValue(e.target.value)} />
-            <button className="curiosity--header__button" type="submit">Envoyer</button>
-        </form>
+        <div className="curiositys">
+            <h2 className="curiositys__title">Les Photos de Curiosity du : {dateFormat} - {curiosity.photos.length} Clichés</h2>
+            <form className="curiositys__form" onSubmit={handleSubmit}>
+                <input className="curiositys__input" type='text' value={inputValue} placeholder='Entrez une date au format AAAA-MM-JJ à partir de SEPT 2012' onChange={e => setInputValue(e.target.value)} />
+                <button className="curiositys__button" type="submit">Envoyer</button>
+            </form>
         </div>
-        <div className='curiosity--main'>
+        <div className='curiositys__container'>
             {curiosity.photos.map((photo: any) => {
                 
                 return(
                     <>
-                    <Link key={photo.id} className="curiosity--main__link" to={`/curiosity/${photo.id}`}>
-                        <img className="curiosity--main__img" src={photo.img_src} alt="photo rover" />
+                    <Link key={photo.id} className="curiositys__link" to={`/curiosity/${photo.id}`}>
+                        <img className="curiositys__img" src={photo.img_src} alt="photo rover" />
                     </Link>
                     </>
                 )

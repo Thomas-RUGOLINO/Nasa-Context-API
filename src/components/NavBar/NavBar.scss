@@ -1,50 +1,38 @@
-.logo-link{
-  margin: 0 auto;
-
-  &__image{ 
-   width : 400px;
-   height: 240px;
-  }
-}
-
 .navigation{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: baseline;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  color: #ff243b;
-  text-shadow: 
-    -1px -1px 0 rgb(177, 175, 175),  
-    1px -1px 0 rgb(177, 175, 175),
-    -1px 1px 0 rgb(177, 175, 175),
-    1px 1px 0 rgb(177, 175, 175);
-}
-.navigation-items{
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  text-align: center;
-  gap: 30px;
-  width: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    margin-bottom: 30px;
 
-  &__link {
-    font-size:30px;
-    font-weight: 500;
-  }
-  
+    &__list{
+      display: flex;
+      gap: 25px;
+      list-style: none;
+      width: auto;
+      padding-left: 150px;
+    }
+
+    &__item{
+      display: inline-block;
+      text-transform: uppercase;
+      align-self: center;
+      cursor: pointer;
+    }
+
+    &__img{
+      width: 70px;
+    }
+
+    &__ancre{
+      color: #ffffff !important;
+      text-decoration: none !important;
+      font-size: 1.3rem;
+      text-shadow: 
+        -1px -1px 0 rgb(190, 59, 59),  
+        1px -1px 0 rgb(214, 56, 56),
+        -1px 1px 0 rgb(201, 42, 42),
+        1px 1px 0 rgb(223, 39, 39);
+        
+    }
 }
 
-a:link,
-a:visited {
-  color: #fc3d21; /* Couleur fixe pour les liens non visités et visités */
-  text-decoration: none; /* Pour supprimer le soulignement par défaut des liens */
-  
-}
-
-/* Changement de couleur au survol */
-a:hover {
-  color: #fc3d21; /* Nouvelle couleur au survol */
-}
