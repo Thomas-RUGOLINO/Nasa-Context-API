@@ -11,13 +11,16 @@
 }
 
 .apod-container{
-    max-width: 90%;
-    height: 600px;
+    display: flex;
+    flex-direction: column;
     margin: auto;
+    width: 80%;
+    height: 600px;
 
     &__img{
-        max-width: 100%;
-        min-height: 60%;
+        align-self: center;
+        width: 800px;
+        height: 50vh;
         margin-bottom: 20px;
     }
 
@@ -30,6 +33,7 @@
     &__author{
         font-size: 1.3rem;
         margin-bottom: 5px;
+        font-weight: bold;
     }
 
     &__explanation{
