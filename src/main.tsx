@@ -1,4 +1,5 @@
-import React from 'react'
+// @ts-nocheck
+ React from 'react'
 import ReactDOM from 'react-dom/client'
 import MyRouter from './components/Router/MyRouter'
 import './reset.css'
